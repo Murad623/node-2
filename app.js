@@ -1,9 +1,7 @@
 const fs = require("fs");
-// const value = fs.readFile("./data.json",'utf8', (err, data) => {
 const value = fs.readFileSync("./data.json",'utf8', (err, data) => {
     if (!err) {
         return data
-        
     }
     else {
         return err
